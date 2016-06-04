@@ -1,4 +1,4 @@
-<b>GeoIP 的简便傻瓜使用方式（获取IP所在的地址，国家）</b>
+GeoIP 的简便傻瓜使用方式（获取IP所在的地址，国家）
 比较着急，没有全部使用官方所提供的方法，直接挂载在网站目录下。
 官方操作方法：https://github.com/maxmind/geoip-api-php
 
