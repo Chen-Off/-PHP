@@ -1,4 +1,4 @@
-最近改使用了phpstorm，之前在phpdesigner中可以使用的快捷跳转到声明处功能在phpstorm中使用函数进行加载继承的类无法进行跳转。
+<b>最近改使用了phpstorm，之前在phpdesigner中可以使用的快捷跳转到声明处功能在phpstorm中使用函数进行加载继承的类无法进行跳转。</b>
 
 之前的例子：
 class one
