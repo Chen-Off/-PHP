@@ -89,7 +89,7 @@ $one->one_one();
 2.在使用函数的类中进行注释定义 `@var`
 
 ```php
-    class Common
+    class Common extends load
     {
         /**
          * @var db|view|model
