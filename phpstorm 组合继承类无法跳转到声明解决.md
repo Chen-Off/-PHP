@@ -69,9 +69,9 @@ $one->one_one();
 
 //注：本人目前不会书写规范的phpdoc 注释代码。好像也可以通道书写规范的注释代码解决该问题。
 
-###使用注释进行设置（单一继承）
+###使用注释进行设置
 
-在该函数的注释返回中返回的是所加载的类的方法名称
+1.在该函数的注释返回中返回的是所加载的类的方法名称 `@return`
 
 ```php
     /**
@@ -82,4 +82,23 @@ $one->one_one();
         return new db();
     }
 ```
-      
+
+`@return` 可以使用 `|` 返回多个方法，如果你的函数是动态加载类的方法的时候
+
+###以下方法参考来源 <a href="http://my.oschina.net/u/248080/blog/351497">开源中国</a>  <a href="https://github.com/samdark/yii2-cookbook/blob/master/book/ide-autocompletion.md">GITHub链接</a>
+
+2.在使用函数的类中进行注释定义 `@var`
+
+```php
+    class Common
+    {
+        /**
+         * @var db|view|model
+         */
+        private $db, $view, $model;
+    }
+```
+
+`@var` 可以使用 `|` 返回多个方法，如果你需要加载多个类方法名称的使用
+
+3.使用 `@property` 设置
