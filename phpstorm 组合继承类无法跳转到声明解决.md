@@ -1,6 +1,10 @@
+phpstorm 组合继承类无法跳转到声明解决 （常规与框架构造模式）
+========================================
 <b>最近改使用了phpstorm，之前在phpdesigner中可以使用的快捷跳转到声明处功能在phpstorm中使用函数进行加载继承的类无法进行跳转。</b>
 
-之前的例子：
+<p>之前的例子：</p>
+```php
+<?php
 class one
 {
     function one_one()
@@ -19,9 +23,13 @@ class two {
 $bb = new two();
 $bb->two_two();
 $bb->one->one_one();
+?>
+```
 
+<p>修改后的例子：</p>
 
-修改后的例子：
+```php
+<?php
 class one
 {
     function one_one()
@@ -46,6 +54,8 @@ class two {
 $bb = new two();
 $one = $bb->two_two();
 $one->one_one();
+?>
+```
 
 上述2处代码都是可以运行的，但只有修改过后的代码可以被快速定位至声明。
 原因就是：
