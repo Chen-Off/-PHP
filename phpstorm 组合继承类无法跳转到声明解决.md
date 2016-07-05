@@ -1,6 +1,7 @@
 phpstorm 组合继承类无法跳转到声明解决 （常规与框架构造模式）
 ========================================
 <b>最近改使用了phpstorm，之前在phpdesigner中可以使用的快捷跳转到声明处功能在phpstorm中使用函数进行加载继承的类无法进行跳转（并且无法自动提示）。</b>
+###参考 <a href="http://my.oschina.net/u/248080/blog/351497">开源中国</a> |  <a href="https://github.com/samdark/yii2-cookbook/blob/master/book/ide-autocompletion.md">GITHub链接</a>
 
 <p>之前的例子：</p>
 ```php
@@ -85,8 +86,6 @@ $one->one_one();
 
 `@return` 可以使用 `|` 返回多个方法，如果你的函数是动态加载类的方法的时候
 
-###以下方法参考来源 <a href="http://my.oschina.net/u/248080/blog/351497">开源中国</a>  <a href="https://github.com/samdark/yii2-cookbook/blob/master/book/ide-autocompletion.md">GITHub链接</a>
-
 2.在使用函数的类中进行注释定义 `@var`
 
 ```php
@@ -106,7 +105,7 @@ $one->one_one();
 4.被调用的函数被赋予了一个方法类，如何使用被赋予的方法类的函数  `@param`
 
 ```php
-/**
+    /**
      * get_data
      * @param $db db
      */
