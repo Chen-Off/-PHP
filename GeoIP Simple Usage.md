@@ -12,14 +12,18 @@ http://maxmind.github.io/GeoIP2-php/
 
 
 ###下载IP库   ```http://dev.maxmind.com/zh-hans/geoip/``` 
+
 ```http://dev.maxmind.com/zh-hans/geoip/legacy/geolite/``` 中下载一代
+
 ```wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz```    一代
+
 ```gunzip GeoLiteCity.dat.gz```
 
 ```http://dev.maxmind.com/geoip/geoip2/geolite2/``` 中下载二代
 
 
 ###使用  一代
+
 ```
 require 'vendor/autoload.php';
 
