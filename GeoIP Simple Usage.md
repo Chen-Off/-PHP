@@ -1,5 +1,6 @@
 GeoIP 的简便傻瓜使用方式（获取IP所在的地址，国家）
-比较着急，没有全部使用官方所提供的方法，直接挂载在网站目录下。
+========================================
+<p>比较着急，没有全部使用官方所提供的方法，直接挂载在网站目录下。</p>
 官方操作方法：
 https://github.com/maxmind/geoip-api-php
 http://maxmind.github.io/GeoIP2-php/
@@ -19,6 +20,7 @@ http://maxmind.github.io/GeoIP2-php/
 
 
 ###使用  一代
+```
 require 'vendor/autoload.php';
 
 $gi = geoip_open("GeoLiteCity.dat",GEOIP_STANDARD);
@@ -29,6 +31,7 @@ echo geoip_country_code_by_addr($gi, "80.24.24.24") . "\t" .
     geoip_country_name_by_addr($gi, "80.24.24.24") . "\n";
 
 geoip_close($gi);
+```
 
 ###使用二代
 
