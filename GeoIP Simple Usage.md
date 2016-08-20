@@ -7,7 +7,9 @@ http://maxmind.github.io/GeoIP2-php/
 
 ###下载/运行 composer.phar 安装依赖库
 ```wget https://getcomposer.org/download/1.2.0/composer.phar```
+
 ```php composer.phar require geoip/geoip:~1.16```
+
 ```php composer.phar require geoip2/geoip2:~2.0```
 
 
